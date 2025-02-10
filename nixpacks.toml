@@ -1,3 +1,2 @@
-
 [start]
-  command = ".\\project\\Scripts\\activate && python \"Desktop\\my projects\\Shop\\gift_shop\\manage.py\" runserver 0.0.0.0:8000"
+command = "python app.py"
