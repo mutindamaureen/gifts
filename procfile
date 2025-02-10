@@ -1,2 +1,2 @@
-web: gunicorn gift_shop.wsgi  --log-file
+web: gunicorn gift_shop.wsgi --log-file -
 web: python manage.py && gunicorn gift_shop.wsgi
