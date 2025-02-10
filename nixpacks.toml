@@ -1,2 +1,7 @@
+# nixpacks.toml
+
+[build]
+  # Specify the build settings if needed
+
 [start]
-web: .\project\Scripts\activate && python "Desktop\my projects\Shop\gift_shop\manage.py" runserver 0.0.0.0:8000
+  command = ".\\project\\Scripts\\activate && python \"Desktop\\my projects\\Shop\\gift_shop\\manage.py\" runserver 0.0.0.0:8000"
