@@ -1,6 +1,0 @@
-web: gunicorn gift.wsgi --log-file -
-
-web: python manage.py && gunicorn gift.wsgi
-
-web: .\project\Scripts\activate && python "manage.py" runserver 0.0.0.0:8000
-web: .\project\Scripts\activate && gunicorn "gift.wsgi:application" --bind 0.0.0.0:8000
