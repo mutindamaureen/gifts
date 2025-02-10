@@ -1,2 +1,10 @@
+[setup]
+python_version = "3.12"
+postgres_version = "16.dev"
+gcc_version = "latest"
+
+[install]
+command = "python -m venv --copies /opt/project && . /opt/project/bin/activate && pip install -r requirements.txt"
+
 [start]
-command = "python app.py"
+command = "source /opt/project/bin/activate && python gift/app.py"
