@@ -1,7 +1,3 @@
-# nixpacks.toml
-
-[build]
-  # Specify the build settings if needed
 
 [start]
   command = ".\\project\\Scripts\\activate && python \"Desktop\\my projects\\Shop\\gift_shop\\manage.py\" runserver 0.0.0.0:8000"
