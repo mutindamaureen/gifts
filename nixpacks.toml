@@ -4,7 +4,7 @@ postgres_version = "16.dev"
 gcc_version = "latest"
 
 [install]
-command = "python -m venv --copies /opt/venv && . /opt/venv/bin/activate && pip install -r requirements.txt"
+command = "python -m venv --copies ./project && . ./project/Scripts/activate && pip install -r requirements.txt"
 
 [start]
-command = "source /opt/venv/bin/activate && gunicorn gift_shop.wsgi:application --bind 0.0.0.0:8000"
+command = ". ./project/Scripts/activate && python gift_shop/manage.py runserver 0.0.0.0:8000"
