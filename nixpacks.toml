@@ -4,7 +4,7 @@ postgres_version = "16.dev"
 gcc_version = "latest"
 
 [install]
-command = "python -m venv --copies /opt/project && . /opt/project/bin/activate && pip install -r requirements.txt"
+command = "python -m venv --copies /opt/venv && . /opt/venv/bin/activate && pip install -r requirements.txt"
 
 [start]
-command = "source /opt/project/bin/activate && python manage.py runserver 0.0.0.0:8000"
+command = "source /opt/venv/bin/activate && python gift/gift/app.py"
