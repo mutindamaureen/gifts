@@ -8,4 +8,4 @@ command = "python -m venv --copies ./project && . ./project/Scripts/activate.bat
 
 [start]
 
-command = ". ./project/Scripts/activate.bat && python manage.py runserver 0.0.0.0:8000"
+command = ". ./project/Scripts/activate.bat && gunicorn \"gift_shop.wsgi:application\" --bind 0.0.0.0:8000"
