@@ -7,4 +7,4 @@ gcc_version = "latest"
 command = "python -m venv --copies ./project && . ./project/Scripts/activate.bat && pip install -r requirements.txt"
 
 [start]
-python manage.py migrate && gunicorn gift_shop.wsgi
+command = python manage.py migrate && gunicorn gift_shop.wsgi
