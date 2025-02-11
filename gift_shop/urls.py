@@ -6,6 +6,7 @@ from django.urls import path, include
 from rest_framework.authtoken.views import obtain_auth_token 
 
 urlpatterns = [
+    path('', RedirectView.as_view(url='/api/v1/', permanent=False)),  
     path('admin/', admin.site.urls),
     path('api/v1/', include('djoser.urls')),
     path('api/v1/token/login/', obtain_auth_token, name='login'),
