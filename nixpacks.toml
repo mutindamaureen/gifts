@@ -6,6 +6,6 @@ gcc_version = "latest"
 [install]
 command = "python -m venv --copies ./project && . ./project/Scripts/activate && pip install -r requirements.txt"
 
-[start
-]
+[start]
+
 command = ". ./project/Scripts/activate.bat && python gift_shop/manage.py runserver 0.0.0.0:8000"
