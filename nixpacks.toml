@@ -1,5 +1,4 @@
-[setup
-]
+[setup]
 python_version = "3.12"
 postgres_version = "16.dev"
 gcc_version = "latest"
