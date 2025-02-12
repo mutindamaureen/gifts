@@ -48,10 +48,7 @@ INSTALLED_APPS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8080",
-    "http://127.0.0.1:8000"
-    "https://shop2gift.netlify.app"
-    "https://vuefrontendgift.vercel.app/",
+    "http://localhost:8080", "http://127.0.0.1:8000", "https://shop2gift.netlify.app", "https://vuefrontendgift.vercel.app/",
 ]
 
 MIDDLEWARE = [
