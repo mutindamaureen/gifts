@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-yvfc7w#hgol#u$7biqh%cgx4s1=57^u*lt_jv04j#xd)&&)v4p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['patient-radiance-production.up.railway.app', 'https://patient-radiance-production.up.railway.app','127.0.0.1']
 CSRF_TRUSTED_ORIGINS = ['https://patient-radiance-production.up.railway.app']
@@ -50,7 +50,8 @@ INSTALLED_APPS = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
     "http://127.0.0.1:8000"
-    "https://shop2gift.netlify.app",
+    "https://shop2gift.netlify.app"
+    "https://vuefrontendgift.vercel.app/",
 ]
 
 MIDDLEWARE = [
