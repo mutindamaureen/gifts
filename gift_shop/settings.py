@@ -15,9 +15,17 @@ SECRET_KEY = 'django-insecure-yvfc7w#hgol#u$7biqh%cgx4s1=57^u*lt_jv04j#xd)&&)v4p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['patient-radiance-production.up.railway.app', 'https://patient-radiance-production.up.railway.app','127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['https://patient-radiance-production.up.railway.app', "https://shop2gift.netlify.app", "https://vuefrontendgift.vercel.app"]
+ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']]
+CSRF_TRUSTED_ORIGINS = ['https://'+os.environ['WEBSITE_HOSTNAME']]
 
+STORAGES ={
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+        },
+    "staticfiles": "whitenoise.storage.CompressedStaticFilesStorage",
+}
+
+# stripe
 STRIPE_SECRET_KEY = 'sk_test_51Qov3RKVohXcPECSbsokAMQUFaZ0B2VyGLMzNuUzYcMOL5KFd5bDp1zpaNxLj0TDZBIYx8nvWNN3UwlQY8ujxOmn00g82PH81Q'
 # Application definition
 
